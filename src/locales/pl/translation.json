@@ -1,0 +1,15 @@
+{
+    "title": "Đây là project giới thiệu cách sử dụng react-i18n",
+    "test": {
+      "a": "d321312321"
+    },
+    "hihi": "dsadas",
+    "description": {
+      "teacher": "Lê Tuấn Thành",
+      "student": "Đào Danh Lưu",
+      "classmate": {
+        "name": "Thành"
+      }
+    }
+  }
+  
