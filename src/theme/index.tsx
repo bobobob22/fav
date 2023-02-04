@@ -4,6 +4,9 @@ import {
   responsiveFontSizes,
   ThemeProvider as MuiThemeProvider,
 } from "@mui/material/styles";
+
+import { ThemeProvider } from "@emotion/react";
+
 import CssBaseline from "@mui/material/CssBaseline";
 
 import { getPalette } from "./theme.palette";
@@ -23,7 +26,7 @@ const palette = getPalette();
 const typography = getTypography(palette);
 const components = getComponents(palette);
 
-const theme = responsiveFontSizes(
+export const muiTheme = responsiveFontSizes(
   createTheme({
     palette,
     components,
@@ -31,9 +34,11 @@ const theme = responsiveFontSizes(
   })
 );
 
-export const ThemeProvider = ({ children }: { children: ReactNode }) => (
-  <MuiThemeProvider theme={theme}>
-    <CssBaseline />
-    {children}
+export const Theme = ({ children }: { children: ReactNode }) => (
+  <MuiThemeProvider theme={muiTheme}>
+    <ThemeProvider theme={muiTheme}>
+      <CssBaseline />
+      {children}
+    </ThemeProvider>
   </MuiThemeProvider>
 );

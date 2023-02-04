@@ -1,11 +1,10 @@
-import { FavMusicForm } from "../FavMusicForm/FavMusicForm";
+import { AlbumContainer } from "../../containers/Album.container";
 import { MainWrapper } from "./Home.styles";
 
 export const Home = () => {
   return (
     <MainWrapper>
-      <FavMusicForm />
+      <AlbumContainer />
     </MainWrapper>
-
   );
 };

@@ -14,16 +14,16 @@ export const Button = ({
   isLoading = false,
   ...buttonProps
 }: ButtonProps) => {
-    return (
-        <MuiButton disabled={disabled || isLoading} color={color} {...buttonProps}>
-          {isLoading && (
-            <CircularProgress
-              size={25}
-              thickness={4}
-              sx={{ mr: 1, color: "white" }}
-            />
-          )}
-          {!isLoading && children}
-        </MuiButton>
-      );
-}
+  return (
+    <MuiButton disabled={disabled || isLoading} color={color} {...buttonProps}>
+      {isLoading && (
+        <CircularProgress
+          size={25}
+          thickness={4}
+          sx={{ mr: 1, color: "white" }}
+        />
+      )}
+      {!isLoading && children}
+    </MuiButton>
+  );
+};

@@ -1,16 +1,22 @@
-import { styled } from "@mui/material";
+import styled from "@emotion/styled";
 
+import { mq } from "../../theme/responsive";
 
-export const AlbumWrapper = styled('ul')(({ theme }) => ({
-  backgroundColor: theme.palette.primary.main,
-  padding: '1rem',
-	borderRadius: '1rem',
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  marginRight: '1rem',
-  marginBottom: '1rem',
-}));
+export const AlbumWrapper = styled.div`
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  background-color: ${(props) => props.theme.palette.primary.main};
+  width: 100%;
+
+  ${mq["md"]} {
+    width: auto;
+  }
+`;
 
 export const AlbumName = styled("h2")`
   margin: 0;
@@ -38,4 +44,3 @@ export const IconWrapper = styled("div")`
   cursor: pointer;
   padding: 1rem;
 `;
-

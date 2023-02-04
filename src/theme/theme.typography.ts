@@ -8,31 +8,29 @@ export const getTypography = (palette: Palette) =>
     h1: {
       fontSize: "2.5rem",
       fontWeight: 600,
-      fontFamily: "Montserrat",
-      textAlign: "center",
+      textAlign: "center"
     },
     h2: {
-      fontSize: "2.2rem",
+      fontSize: "2.2rem"
     },
     h3: {
-      fontSize: "2rem",
+      fontSize: "2rem"
     },
     h4: {
-      fontSize: "1.8rem",
+      fontSize: "1.8rem"
     },
     h5: {
-      fontSize: "1.4rem",
+      fontSize: "1.4rem"
     },
     h6: {
-      fontSize: "1.2rem",
+      fontSize: "1.2rem"
     },
     subtitle1: {
-      fontFamily: "Montserrat",
-      fontWeight: 600,
+      fontWeight: 600
     },
     subtitle2: { fontSize: "1rem" },
     button: {
       fontSize: "1.1rem",
-      fontWeight: "normal",
-    },
+      fontWeight: "normal"
+    }
   });

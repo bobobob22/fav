@@ -1,7 +1,5 @@
 import { alpha, Components, Palette, Theme } from "@mui/material/styles";
 
-
-
 export const getComponents = (palette: Palette): Components<Theme> => ({
   MuiCssBaseline: {
     styleOverrides: `
@@ -22,11 +20,11 @@ export const getComponents = (palette: Palette): Components<Theme> => ({
       background: rgba(255,255,255,0.5);
       -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.6);
     }
-    `,
+    `
   },
   MuiButton: {
     defaultProps: {
-      variant: "contained",
+      variant: "contained"
     },
     styleOverrides: {
       root: {
@@ -34,51 +32,51 @@ export const getComponents = (palette: Palette): Components<Theme> => ({
         textTransform: "none",
         borderRadius: "10px",
         boxShadow: "none",
-        background: palette.borderGrey.main,
+        background: palette.borderGrey.main
       },
       containedSecondary: {
         ":disabled": {
           background: alpha(palette.secondary.main, 0.7),
-          color: "white",
-        },
-      },
-    },
+          color: "white"
+        }
+      }
+    }
   },
   MuiOutlinedInput: {
     styleOverrides: {
       root: {
         "& .MuiOutlinedInput-notchedOutline": {
-          borderColor: palette.borderGrey.main,
+          borderColor: palette.borderGrey.main
         },
         "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
-          borderColor: palette.secondary.main,
-        },
+          borderColor: palette.secondary.main
+        }
       },
       input: {
-        padding: "0.8rem",
+        padding: "0.8rem"
       },
       notchedOutline: {
         borderRadius: "6px",
-        borderWidth: "2px",
-      },
-    },
+        borderWidth: "2px"
+      }
+    }
   },
   MuiContainer: {
     styleOverrides: {
       root: {
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center",
-      },
-    },
+        justifyContent: "center"
+      }
+    }
   },
   MuiAppBar: {
     styleOverrides: {
       root: {
         boxShadow: "none",
         alignItems: "flex-start",
-        padding: "1.4rem",
-      },
-    },
-  },
+        padding: "1.4rem"
+      }
+    }
+  }
 });

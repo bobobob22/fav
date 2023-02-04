@@ -4,7 +4,6 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 
-import { Album } from "../FavMusicForm/FavMusicForm";
 import {
   AlbumName,
   AlbumArtist,
@@ -14,6 +13,7 @@ import {
   IconsWrapper,
 } from "./Album.styles";
 import { useTranslation } from "react-i18next";
+import { Album } from "../../containers/Album.types";
 
 export interface IAlbum {
   album: Album;
